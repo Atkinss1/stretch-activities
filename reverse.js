@@ -5,15 +5,16 @@
 function reverse () {
   const [,, ...args] = process.argv;
 
-  let reversedWord = '';
-
+  
   for (let word of args) {
-    for (let i = word.length - 1; i >= 0; i--) {
-      reversedWord += word[i];
+
+    let reversedWord = ''
+
+      for (let i = word.length - 1; i >= 0; i--) {
+         reversedWord += word[i];
+      }
+      console.log(reversedWord);
     }
-    console.log(reversedWord);
-    reversedWord = '';
-  }
 }
 
 reverse();
